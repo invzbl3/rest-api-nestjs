@@ -8,7 +8,7 @@ import { UserEntity } from '../../entity/user.entity/user.entity';
 export class UserService {
   constructor(
     @InjectRepository(UserEntity)
-    private userRepository: Repository<UserEntity>
+    private userRepository: Repository<UserEntity>,
   ) {}
 
   create(user: UserDto): Promise<UserDto> {
